@@ -1,4 +1,4 @@
-# semana10_3_1_4_ejemplo_01
+# [APEB2-30%] ae1-2bim-aa24
 
 # python manage.py createsuperuser  
 # python manage.py runserver
