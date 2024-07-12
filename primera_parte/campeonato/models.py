@@ -8,7 +8,7 @@ class equipo_futbol(models.Model):
     estadio = models.CharField(max_length=100)
 
     def __str__(self): 
-        return """Nombre: %s - Colores: %s \n     #representacion del objeto en determinada instancia
+        return """Nombre: %s - Color de camiseta: %s \n     #representacion del objeto en determinada instancia
                 Plantilla_jugadores: %d\n
                 Rentabilidad: %d\n
                 Estadio: %s""" % (self.nombre,
