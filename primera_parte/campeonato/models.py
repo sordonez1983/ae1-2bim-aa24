@@ -16,4 +16,3 @@ class equipo_futbol(models.Model):
                 self.plantilla_jugadores,
                 self.rentabilidad,
                 self.estadio)
-http://127.0.0.1:8000/admin/campeonato/equipo_futbol/add/
