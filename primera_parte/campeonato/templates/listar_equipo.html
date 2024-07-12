@@ -7,20 +7,20 @@
     <thead>
     <tr>
       <th>Nombre</th>
-      <th>Siglas</th>
+      <th>Colores</th>
       <th>Estadio</th>
-      <th>Seguidores</th>
-      <th>Campeonatos</th>
+      <th>Plantilla_jugadores</th>
+      <th>Rentabilidad</th>
     </tr>
     </thead>
     <tbody>
     {% for equipo in equipos  %}
       <tr>
         <td>{{equipo.nombre}}</td>
-        <td>{{equipo.siglas}}</td>
+        <td>{{equipo.colores}}</td>
         <td>{{equipo.estadio}}</td>
-        <td>{{equipo.seguidores}}</td>
-        <td>{{equipo.campeonatos}}</td>
+        <td>{{equipo.plantilla_jugadores}}</td>
+        <td>{{equipo.rentabilidad}}</td>
       </tr>
       {% endfor %}
 

@@ -1,18 +1,19 @@
 from django.db import models
 
-class Equipo(models.Model):
+class equipo_futbol(models.Model):
     nombre = models.CharField(max_length=30)
-    siglas = models.CharField(max_length=30)
-    seguidores = models.IntegerField()
-    campeonatos = models.IntegerField()
+    colores = models.CharField(max_length=30)
+    plantilla_jugadores = models.IntegerField()
+    rentabilidad = models.IntegerField()
     estadio = models.CharField(max_length=100)
 
     def __str__(self): 
-        return """Nombre: %s - Siglas: %s \n     #representacion del objeto en determinada instancia
-                Seguidores: %d\n
-                Campeonatos: %d\n
+        return """Nombre: %s - Colores: %s \n     #representacion del objeto en determinada instancia
+                Plantilla_jugadores: %d\n
+                Rentabilidad: %d\n
                 Estadio: %s""" % (self.nombre,
-                self.siglas,
-                self.seguidores,
-                self.campeonatos,
+                self.colores,
+                self.plantilla_jugadores,
+                self.rentabilidad,
                 self.estadio)
+http://127.0.0.1:8000/admin/campeonato/equipo_futbol/add/
